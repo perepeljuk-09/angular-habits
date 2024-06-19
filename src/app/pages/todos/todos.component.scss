@@ -1,0 +1,45 @@
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.todo-item {
+    width: 100%;
+    border-radius: 12px;
+    display: flex;
+    overflow: hidden;
+    min-height: 50px;
+}
+
+
+.todo-item__btn {
+    flex-basis: 20%;
+}
+
+.todo-item__link {
+    padding: 5px 10px;
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    background-color: rgb(57, 57, 57);
+}
+
+.todo-item__link-unactive {
+    background-color: gray;
+    color: gainsboro;
+} 
+
+.todo-item__link-positive {
+    background-color: green;
+    color: white;
+}
+.todo-item__link-negative {
+    background-color: orange;
+    color: white;
+
+}

@@ -1,0 +1,38 @@
+<header class="header">
+    <div class="header-lvl-block">
+        <img class="header-logo" src="https://crosti.ru/patterns/00/23/23/f0_picture_8f1e814c.jpg" alt="avatar">
+        <span class="header-lvl">{{ indicatorsService.lvl() }} lvl</span>
+    </div>
+    <div class="header-indicators">
+        
+        <div class="header-item">
+            <div class="header-health-block">
+                <div class="header-health indicator"
+                    [ngStyle]="{'transform': 'translateX(' + getHealthProcent() + '%)'}"
+                >
+                </div>
+            </div>
+            <div class="header-experience__footer">
+                <span>{{ indicatorsService.health() }} / 50</span>
+                
+                <span>Health</span>
+            </div>
+        </div>
+
+        <div class="header-item">
+
+            <div class="header-experience-block">
+                <div class="header-experience indicator"
+                    [ngStyle]="{'transform': 'translateX(' + getExperienceProcent() + '%)'}"
+                >
+                </div>
+            </div>
+            <div class="header-experience__footer">
+                <span>{{ indicatorsService.experience() }} / 50</span>
+                
+                <span>Experience</span>
+            </div>
+        </div>
+
+    </div>
+</header>

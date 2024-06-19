@@ -1,0 +1,44 @@
+
+.tabs {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+}
+
+.tabs-menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.tabs-menu__item {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 8px 16px;
+    font-size: 20px;
+    flex-basis: 20%;
+}
+
+.tabs-menu__item.new-todo {
+    position: relative;
+    border-radius: 12px;
+    background-color: violet;
+    height: 60px;
+    flex-basis: 60px;
+    rotate: (45deg);
+    top: -60px;
+}
+
+.tabs-menu__item-link {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabs-menu__item a,
+.tabs-menu__item a:active {
+    text-decoration: none;
+    color: aliceblue;
+}

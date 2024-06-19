@@ -1,0 +1,126 @@
+
+.go-home {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.header-block {
+    display: flex;
+    flex-direction: column;
+    background-color: violet;
+    flex-grow: 1;
+    padding: 16px;
+    gap: 16px;
+}
+
+.header {
+    display: flex;
+    gap: 30px;
+}
+
+.header-title {
+    text-align: left;
+    flex-grow: 1;
+    font-weight: 400;
+}
+
+.header-title,
+.submit {
+    color: aliceblue;
+}
+
+.submit {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+}
+
+
+.input-title,
+.textarea {
+    padding: 10px 20px;
+    background-color: rgb(35, 17, 35);
+    font-size: 25px;
+    color: aliceblue;
+}
+
+.textarea {
+    resize: none;
+    height: 170px;
+}
+
+.input-title::placeholder,
+.textarea::placeholder {
+    color: rgb(112, 68, 112);
+    font-size: 25px;
+}
+
+.body-row-positive {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.body-row-positive__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+}
+
+.body-row-positive__item-btn {
+    border-radius: 50%;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(112, 68, 112);
+}
+
+.body-row-positive__item-btn,
+.body-row-positive__item-btn-name {
+    color: rgb(112, 68, 112);
+    font-size: 25px;
+}
+
+.span {
+    color: aliceblue;
+    font-size: 25px;
+}
+
+.body-row-difficulties {
+    display: flex;
+    justify-content: space-between;
+}
+
+.body-row-difficult__item-btn {
+    color: aliceblue;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(55, 27, 55);
+}
+
+.body-row-counter {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.body-row-counter__item-btn {
+    flex-grow: 1;
+    color: aliceblue;
+    border-radius: 8px;
+    padding: 16px 24px;
+    border: none;
+    background-color: rgb(55, 27, 55);
+
+}

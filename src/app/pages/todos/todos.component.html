@@ -1,0 +1,20 @@
+<p>todos works!</p>
+<div class="todo-list">
+    @for(todo of todos; track todo.id)
+    {
+        <div class="todo-item">
+            <button class="todo-item__btn"
+                [ngClass]="isPositive(todo) ? 'todo-item__link-positive' : 'todo-item__link-unactive'"
+                (click)="indicatorsService.updateByClick(todo.positiveType, todo.difficultType)"
+            >+</button>
+            <a class="todo-item__link" [routerLink]="['/todo',todo.id]">
+                <p>{{ todo.title }}</p>
+                <p>{{ todo.description }}</p>
+            </a>
+            <button class="todo-item__btn"
+                [ngClass]="!isPositive(todo) ? 'todo-item__link-negative' : 'todo-item__link-unactive'"
+                (click)="indicatorsService.updateByClick(todo.positiveType, todo.difficultType)"
+            >-</button>
+        </div>
+    }
+</div>

@@ -1,0 +1,61 @@
+.header {
+    display: flex;
+    gap: 15px;
+}
+
+.header-logo {
+    height: 100px;
+    width: 100px;
+}
+
+.header-lvl-block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.header-lvl {
+    color: aliceblue;
+}
+
+.header-indicators {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.header-experience__footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-experience__footer span {
+    color: aliceblue;
+}
+
+.header-health-block,
+.header-experience-block {
+    position: relative;
+    border-radius: 12px;
+    height: 6px;
+    overflow: hidden;
+}
+
+.header-health {
+    background-color: red;
+}
+
+.header-experience {
+    background-color: orange;
+}
+
+
+
+.indicator {
+    position: absolute;
+    height: 6px;
+    width: 100%;
+    transition: all .5s ease;
+}

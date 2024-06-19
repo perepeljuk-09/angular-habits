@@ -1,0 +1,126 @@
+<form class="body" [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="header-block">
+        <header class="header">
+            <a routerLink="/" class="go-home">Go home</a>
+            @if(isNew) {
+                <h2 class="header-title">Create Habit</h2>
+                <button class="submit" type="submit">CREATE</button>
+            } 
+            @else {
+                <button class="submit" type="button" (click)="delete()">Delete</button>
+                <button class="submit" type="button" (click)="save()">Save</button>
+            }
+        </header>
+        <input
+            type="text"
+            placeholder="Task Title"
+            class="input-title"
+            formControlName="title"
+        >
+        <textarea
+            placeholder="Notes"
+            class="textarea"
+            formControlName="description"
+        ></textarea>
+    </div>
+    <div class="body-block">
+        <div class="body-row-positive">
+            <div class="body-row-positive__item">
+                <input
+                    type="radio"
+                    id="positive1"
+                    formControlName="positiveType"
+                    [value]="positiveTypeEnum.positive"
+                    class="body-row-positive__item-btn"
+                />
+                <!-- <button class="body-row-positive__item-btn">+</button> -->
+                <label for="positive1" class="body-row-positive__item-btn-name">Positive</label>
+            </div>
+            <div class="body-row-positive__item">
+                <input
+                    type="radio"
+                    id="positive2"
+                    formControlName="positiveType"
+                    [value]="positiveTypeEnum.negative"
+                    class="body-row-positive__item-btn"
+                />
+                <!-- <button class="body-row-positive__item-btn">-</button> -->
+                <label for="positive2" class="body-row-positive__item-btn-name">Negative</label>
+            </div>
+        </div>
+        <span class="span">Diffuculty</span>
+        <div class="body-row-difficulties">
+            <input
+                type="radio"
+                id="difficult1"
+                formControlName="difficultType"
+                [value]="difficultTypeEnum.trivial"
+                class="body-row-positive__item-btn"
+            />
+            <!-- <button class="body-row-difficult__item-btn">Trivial</button> -->
+            <label for="difficult1" class="body-row-positive__item-btn-name">Trivial</label>
+            <input
+                type="radio"
+                id="difficult2"
+                formControlName="difficultType"
+                [value]="difficultTypeEnum.easy"
+                class="body-row-positive__item-btn"
+            />
+            <!-- <button class="body-row-difficult__item-btn">Trivial</button> -->
+            <label for="difficult2" class="body-row-positive__item-btn-name">Easy</label>
+            <input
+                type="radio"
+                id="difficult3"
+                formControlName="difficultType"
+                [value]="difficultTypeEnum.medium"
+                class="body-row-positive__item-btn"
+            />
+            <!-- <button class="body-row-difficult__item-btn">Trivial</button> -->
+            <label for="difficult3" class="body-row-positive__item-btn-name">Medium</label>
+            <input
+                type="radio"
+                id="difficult4"
+                formControlName="difficultType"
+                [value]="difficultTypeEnum.hard"
+                class="body-row-positive__item-btn"
+            />
+            <!-- <button class="body-row-difficult__item-btn">Trivial</button> -->
+            <label for="difficult4" class="body-row-positive__item-btn-name">Hard</label>
+        </div>
+        <span class="span">Reset Counter</span>
+        <div class="body-row-counter">
+            <input
+                type="radio"
+                id="reset1"
+                formControlName="resetType"
+                [value]="resetTypeEnum.daily"
+                class="body-row-positive__item-btn"
+            />
+            <!-- <button class="body-row-counter__item-btn">Daily</button> -->
+            <label for="reset1" class="body-row-positive__item-btn-name">Daily</label>
+            <input
+                type="radio"
+                id="reset2"
+                formControlName="resetType"
+                [value]="resetTypeEnum.weekly"
+                class="body-row-positive__item-btn"
+            />
+            <!-- <button class="body-row-counter__item-btn">Daily</button> -->
+            <label for="reset2" class="body-row-positive__item-btn-name">Weekly</label>
+            <input
+                type="radio"
+                id="reset3"
+                formControlName="resetType"
+                [value]="resetTypeEnum.monthly"
+                class="body-row-positive__item-btn"
+            />
+            <!-- <button class="body-row-counter__item-btn">Daily</button> -->
+            <label for="reset3" class="body-row-positive__item-btn-name">Monthly</label>
+
+        </div>
+
+
+    </div>
+</form>
+
+
