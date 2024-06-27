@@ -6,3 +6,9 @@ bootstrapApplication(AppComponent, appConfig)
   .catch((err) => console.error(err));
 
 // master
+
+
+
+// 5
+// 6
+// 7
